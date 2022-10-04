@@ -1,0 +1,38 @@
+/*estadio.html*/
+#bodyestadios{
+    background-image: url(https://images.pexels.com/photos/61135/pexels-photo-61135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+}
+#bodyestadios{
+    header{
+        h1{
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            margin-top: 50px;
+
+        }
+    }
+    div{
+        article{
+            p{
+                text-align: center;
+                font-size: 18px;
+                padding: 5px;
+                background-color: rgb(104, 204, 219);
+                margin-bottom: 50px;
+                color: rgb(255, 255, 255);
+                border-radius: 10px 40px 40px 10px;  
+            }
+            h3{
+                text-align: center;
+                margin: 70px;
+                font-size: 60px;
+                background-color: beige;
+            }
+        }
+    }
+}
+.fotoestadio{
+    display: flex;
+    justify-content: center;
+}
