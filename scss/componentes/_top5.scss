@@ -13,10 +13,11 @@ body{
 .centrar {
   @extend %centrado;
 }
-
 #titulotop5 {
   color: rgb(255, 255, 255);
   font-size: 70px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .centrartxt {
@@ -39,35 +40,19 @@ body{
   background-image: url(https://images7.alphacoders.com/932/932701.jpg);
   background-attachment: fixed;
 }
-
 #lio {
+  @extend %fotojugadores;
   background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt58950bb17658bfdd/60dc9f13993b04384646b3d3/e153d63cbafa1bec93659d0a419d5a4e2f5ae5a4.jpg?format=jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
 }
 
 #kevin {
   background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt4a371892be8ee250/60da7568892a730f587fddfa/6b137e8a2b057779989e7e72d9d7429ef0c1877e.jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
+  @extend %fotojugadores;
 }
 
 #neymar {
   background-image: url(https://hoypyspace.sfo2.cdn.digitaloceanspaces.com/imagenes/FUQB73UXwAAs0iF.jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
+  @extend %fotojugadores;
 }
 
 #subtop5 {

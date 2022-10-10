@@ -6,6 +6,15 @@
   flex-direction: row;
 }
 
+#neymar, #kevin, #lio {
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
 /*top5.html*/
 body article img {
   width: 70%;
@@ -17,6 +26,8 @@ body header {
 #titulotop5 {
   color: rgb(255, 255, 255);
   font-size: 70px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .centrartxt {
@@ -42,32 +53,14 @@ body header {
 
 #lio {
   background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt58950bb17658bfdd/60dc9f13993b04384646b3d3/e153d63cbafa1bec93659d0a419d5a4e2f5ae5a4.jpg?format=jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
 }
 
 #kevin {
   background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt4a371892be8ee250/60da7568892a730f587fddfa/6b137e8a2b057779989e7e72d9d7429ef0c1877e.jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
 }
 
 #neymar {
   background-image: url(https://hoypyspace.sfo2.cdn.digitaloceanspaces.com/imagenes/FUQB73UXwAAs0iF.jpg);
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
 }
 
 #subtop5 {
@@ -98,12 +91,16 @@ body header {
 #bodyestadios {
   background-image: url(https://images.pexels.com/photos/61135/pexels-photo-61135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #bodyestadios header h1 {
   text-align: center;
   background-color: rgb(255, 255, 255);
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #bodyestadios div article p {
   text-align: center;
@@ -114,7 +111,7 @@ body header {
   color: rgb(255, 255, 255);
   border-radius: 10px 40px 40px 10px;
 }
-#bodyestadios div article h3 {
+#bodyestadios div article h2 {
   text-align: center;
   margin: 70px;
   font-size: 60px;
@@ -126,7 +123,16 @@ body header {
   justify-content: center;
 }
 
+.contenedor_estadio_mapa {
+  display: flex;
+  justify-content: center;
+}
+
 /*index.html*/
+nav a {
+  font-size: 30px;
+}
+
 section p {
   text-align: center;
   font-size: 30px;
@@ -134,8 +140,9 @@ section p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 0.3fr);
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .grid-item {
@@ -143,10 +150,11 @@ section p {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: transform 0.3s ease-in-out;
   border: solid 1px white;
   margin: 10px;
+  width: 90%;
 }
 
 .ajustimg {
@@ -155,14 +163,21 @@ section p {
 }
 
 .grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
+  filter: opacity(1);
+  transform: scale(1.3);
+  background-color: rgb(201, 175, 142);
+  box-shadow: 23px 24px 10px 9px rgba(0, 0, 0, 0.33);
 }
 
-#partidos article div img {
-  width: 55%;
+#selecciones h2 {
+  font-size: 40px;
+  background-color: rgb(0, 95, 95);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  text-align: center;
 }
-
 #selecciones article div img {
   width: 60%;
   margin: 50px;
@@ -178,12 +193,12 @@ section p {
 }
 #selecciones article p {
   text-align: center;
-  font-size: 18px;
-  width: 680px;
+  font-size: 30px;
+  width: 70%;
   background-color: rgb(106, 71, 109);
   margin-bottom: 50px;
   color: black;
-  border-radius: 10px 40px 40px 10px;
+  border-radius: 10px 10px 40px 10px;
 }
 
 #partidos article h2 {
@@ -192,15 +207,17 @@ section p {
   text-decoration: none;
   background-color: rgb(0, 95, 95);
   color: white;
+  font-size: 40px;
+  text-align: center;
 }
 #partidos article p {
-  text-align: center;
-  font-size: 18px;
-  width: 680px;
+  font-size: 30px;
+  width: 70%;
   background-color: rgb(106, 71, 109);
   margin-bottom: 50px;
   color: antiquewhite;
-  border-radius: 10px 40px 40px 10px;
+  border-radius: 10px 10px 40px 10px;
+  text-align: center;
 }
 
 #headindex {
@@ -220,6 +237,8 @@ section p {
   border-radius: 30px;
   padding: 6px;
   text-align: center;
+  font-size: 20px;
+  width: 70%;
 }
 
 #bodyindex {
@@ -229,16 +248,65 @@ section p {
 #inicio {
   color: white;
   background-color: rgb(0, 95, 95);
+  margin-top: 7%;
 }
 
-@media screen and (max-width: 1060px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    flex-wrap: wrap;
-  }
-}
 .footer-color {
   background: linear-gradient(to top, #343a41 0%, #666699 100%);
+}
+
+.grid-container-fixture {
+  display: grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item-fixture {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  border: solid 0px white;
+  margin: 2px;
+  width: 99%;
+}
+
+.grid-item-fixture:hover {
+  filter: opacity(1);
+  transform: scale(1.3);
+  background-color: rgb(224, 201, 170);
+  box-shadow: 23px 24px 10px 9px rgba(0, 0, 0, 0.33);
+}
+
+.ajustimglogo {
+  width: 310px;
+  height: 210px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.volver {
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  top: 80%;
+}
+
+.footerindex {
+  margin-top: 50px;
 }
 
 * {
@@ -249,10 +317,11 @@ section p {
 /* NAV */
 nav {
   background-color: rgb(231, 231, 0);
+  opacity: 90%;
 }
 
 .darmargen {
-  margin: 50px;
+  margin-top: 50px;
 }
 
 .navestadios {
@@ -261,26 +330,119 @@ nav {
 
 /* Diseño responsive*/
 @media screen and (max-width: 480px) {
+  .media {
+    display: flex;
+    flex-direction: column;
+  }
   .fotoestadio {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .grid-container-fixture {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grid-item-fixture:hover {
+    filter: opacity(1);
+    transform: scale(1);
+    background-color: rgb(224, 201, 170);
+    box-shadow: 23px 24px 10px 9px rgba(0, 0, 0, 0.33);
+  }
+  nav a {
+    font-size: 15px;
+  }
+  #bodyestadios div article h2 {
+    font-size: 20px;
+  }
+  #bodyestadios div article p {
+    font-size: 12px;
+  }
+  #bodyestadios div article div {
+    flex-direction: column;
   }
 }
 .nuevaClase {
   color: black;
 }
 
-@media screen and (max-width: 524px) {
+@media screen and (max-width: 642px) {
+  #bodytop5 header h1 {
+    font-size: 30px;
+  }
+  #bodytop5 section h2 {
+    font-size: 30px;
+  }
+  #bodytop5 section h3 {
+    font-size: 30px;
+  }
+  #bodyestadios div article div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #bodyestadios div article div .fotoestadio {
+    margin-bottom: 10px;
+  }
+}
+.grid-container {
+  grid-template-columns: 1fr;
+  margin: 5px;
+  display: flex;
+}
+
+#bodyindex {
+  background-color: azure;
+}
+
+.grid-item {
+  width: 90%;
+}
+
+.grid-item:hover {
+  filter: opacity(1);
+  transform: scale(1);
+  background-color: rgb(200, 240, 240);
+}
+
+#selecciones article h2 {
+  font-size: 30px;
+  background-color: rgb(0, 95, 95);
+  color: white;
+}
+#selecciones article p {
+  font-size: 20px;
+  color: black;
+  border-radius: 26px 10px 10px 10px;
+  width: 90%;
+}
+#selecciones article div img {
+  width: 100%;
+  margin: 50px;
+}
+
+#partidos article h2 {
+  background-color: rgb(0, 95, 95);
+  color: white;
+  font-size: 30px;
+}
+#partidos article p {
+  font-size: 20px;
+  background-color: rgb(106, 71, 109);
+  border-radius: 26px 10px 10px 10px;
+  width: 90%;
+}
+
+@media screen and (max-width: 1107px) {
   .grid-container {
-    grid-template-columns: 1fr;
-    margin: 5px;
+    grid-template-columns: repeat(2, 0.4fr);
   }
-  #bodyindex {
-    background-color: azure;
+  .none {
+    display: none;
   }
-  header nav ul li a {
-    color: rgb(77, 77, 77);
+  .grid-item {
+    width: 93%;
   }
 }
 

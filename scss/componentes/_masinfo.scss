@@ -2,14 +2,17 @@
 #bodyestadios{
     background-image: url(https://images.pexels.com/photos/61135/pexels-photo-61135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 #bodyestadios{
     header{
         h1{
             text-align: center;
             background-color: rgb(255, 255, 255);
-            margin-top: 50px;
-
+            margin-top: 100px;
         }
     }
     div{
@@ -23,7 +26,7 @@
                 color: rgb(255, 255, 255);
                 border-radius: 10px 40px 40px 10px;  
             }
-            h3{
+            h2{
                 text-align: center;
                 margin: 70px;
                 font-size: 60px;
@@ -34,5 +37,10 @@
 }
 .fotoestadio{
     display: flex;
+    justify-content: center
+}
+.contenedor_estadio_mapa{
+    display: flex;
     justify-content: center;
 }
+

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAV */
+nav{
+    background-color: rgb(231, 231, 0);
+    opacity: 90%;
+}
+.darmargen{
+    margin-top: 50px;
+}
+.navestadios{
+    background-color: darkcyan;
+}
+
+/* Diseño responsive*/
+@media screen and (max-width: 480px){
+    .media{
+        display: flex;
+        flex-direction: column;
+    }
+    .fotoestadio{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .grid-container-fixture{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .grid-item-fixture:hover{
+        filter: opacity(1);
+        transform: scale(1);
+        background-color: rgb(224, 201, 170);
+        box-shadow: 23px 24px 10px 9px rgba(0,0,0,0.33);
+    }
+    nav a{
+        font-size: nth($font-size, $n:5);
+    }
+    #bodyestadios{
+        div{
+            article{
+                h2{
+                    font-size: nth($font-size , $n: 1);
+                }
+                p{
+                    font-size: 12px;
+                }
+                div{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+.nuevaClase{
+    color: black;
+}
+@media screen and (max-width: 642px){
+    #bodytop5{
+        header{
+            h1{
+                font-size: 30px;
+            }
+        }
+        section{
+            h2{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+    #bodyestadios{
+        div{
+            article{    
+                div{
+                    flex-direction: column;
+                    align-items: center;
+                    .fotoestadio{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+    .grid-container{
+        grid-template-columns: 1fr;
+        margin:5px;
+        display: flex;
+   }
+   #bodyindex{
+        background-color: azure;
+   }
+   .grid-item{
+    width: 90%;
+    }
+   .grid-item:hover{
+    filter: opacity(1);
+    transform: scale(1);
+    background-color: rgb(200, 240, 240);
+    }
+    #selecciones{
+        article{
+            h2{
+                @include paratitulos(rgb(0, 95, 95), nth($font-size, $n:2),nth($colores, $n: 6));
+            }
+            p{
+                font-size: nth($font-size, $n:1);
+                color: nth($colores, $n: 7);
+                border-radius: 26px 10px 10px 10px;
+                width: 90%;
+            }
+            div{
+                img{
+                    width: 100%;
+                    margin: 50px;
+                }
+            }
+        }
+    }
+    #partidos{
+        article{
+            h2{
+                background-color: rgb(0, 95, 95);
+                color: nth($colores, $n: 6);
+                font-size: nth($font-size, $n:2);
+            }
+            p{
+                font-size: nth($font-size, $n:1);
+                background-color: rgb(106, 71, 109);
+                border-radius: 26px 10px 10px 10px;
+                width: 90%;
+            }
+    
+        }
+    }
+@media screen and (max-width: 1107px){
+    .grid-container{
+        grid-template-columns: repeat(2, 0.4fr);
+    }
+    .none{
+        display: none;
+    }
+    .grid-item{
+        width: 93%;
+    }
+}   
