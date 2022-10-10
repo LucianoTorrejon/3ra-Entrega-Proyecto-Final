@@ -385,55 +385,49 @@ nav {
   #bodyestadios div article div .fotoestadio {
     margin-bottom: 10px;
   }
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 5px;
+    display: flex;
+  }
+  #bodyindex {
+    background-color: azure;
+  }
+  .grid-item {
+    width: 90%;
+  }
+  .grid-item:hover {
+    filter: opacity(1);
+    transform: scale(1);
+    background-color: rgb(200, 240, 240);
+  }
+  #selecciones article h2 {
+    font-size: 30px;
+    background-color: rgb(0, 95, 95);
+    color: white;
+  }
+  #selecciones article p {
+    font-size: 20px;
+    color: black;
+    border-radius: 26px 10px 10px 10px;
+    width: 90%;
+  }
+  #selecciones article div img {
+    width: 100%;
+    margin: 50px;
+  }
+  #partidos article h2 {
+    background-color: rgb(0, 95, 95);
+    color: white;
+    font-size: 30px;
+  }
+  #partidos article p {
+    font-size: 20px;
+    background-color: rgb(106, 71, 109);
+    border-radius: 26px 10px 10px 10px;
+    width: 90%;
+  }
 }
-.grid-container {
-  grid-template-columns: 1fr;
-  margin: 5px;
-  display: flex;
-}
-
-#bodyindex {
-  background-color: azure;
-}
-
-.grid-item {
-  width: 90%;
-}
-
-.grid-item:hover {
-  filter: opacity(1);
-  transform: scale(1);
-  background-color: rgb(200, 240, 240);
-}
-
-#selecciones article h2 {
-  font-size: 30px;
-  background-color: rgb(0, 95, 95);
-  color: white;
-}
-#selecciones article p {
-  font-size: 20px;
-  color: black;
-  border-radius: 26px 10px 10px 10px;
-  width: 90%;
-}
-#selecciones article div img {
-  width: 100%;
-  margin: 50px;
-}
-
-#partidos article h2 {
-  background-color: rgb(0, 95, 95);
-  color: white;
-  font-size: 30px;
-}
-#partidos article p {
-  font-size: 20px;
-  background-color: rgb(106, 71, 109);
-  border-radius: 26px 10px 10px 10px;
-  width: 90%;
-}
-
 @media screen and (max-width: 1107px) {
   .grid-container {
     grid-template-columns: repeat(2, 0.4fr);
