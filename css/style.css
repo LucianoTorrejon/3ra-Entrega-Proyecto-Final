@@ -174,6 +174,10 @@ section p {
   height: 143px;
 }
 
+.ajustfixture {
+  width: 100%;
+}
+
 .grid-item:hover {
   filter: opacity(1);
   transform: scale(1.1);
@@ -289,8 +293,8 @@ section p {
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
   border: solid 0px white;
-  margin: 2px;
-  width: 99%;
+  margin: 10px;
+  width: 80%;
 }
 
 .grid-item-fixture:hover {
@@ -366,12 +370,13 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   .grid-item-fixture:hover {
     filter: opacity(1);
     transform: scale(1);
     background-color: rgb(224, 201, 170);
-    box-shadow: 23px 24px 10px 9px rgba(0, 0, 0, 0.33);
+    box-shadow: 23px 24px 100px 9px rgba(0, 0, 0, 0.33);
   }
   nav a {
     font-size: 15px;
