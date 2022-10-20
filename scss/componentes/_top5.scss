@@ -14,10 +14,12 @@ body{
   @extend %centrado;
 }
 #titulotop5 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 70px;
+  font-family: averta;
   margin-top: 100px;
   text-align: center;
+  background: rgba(255, 253, 247, 0.8);
 }
 
 .centrartxt {
@@ -25,15 +27,18 @@ body{
 }
 
 .arg {
-  color: aquamarine;
+  color: rgb(168, 255, 226);
+  font-family: averta;
 }
 
 .bra {
   color: rgb(255, 251, 9);
+  font-family: averta;
 }
 
 .bel {
-  color: rgb(148, 0, 0);
+  color: rgb(218, 208, 71);
+  font-family: averta;
 }
 
 #bodytop5 {
@@ -56,10 +61,13 @@ body{
 }
 
 #subtop5 {
+  font-family: averta;
   font-size: 50px;
   text-decoration: solid;
   margin: 50px;
   color: white;
+  background: rgba(255, 253, 247, 0.436);
+  text-align: center;
 }
 
 #headtop5 {
@@ -75,5 +83,6 @@ body{
   font-size: 50px;
   text-align: center;
   margin: 30px;
-  text-decoration: underline;
+  font-family: averta;
+  
 }
