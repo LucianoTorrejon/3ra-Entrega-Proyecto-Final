@@ -395,7 +395,7 @@ nav {
   color: black;
 }
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 681px) {
   #bodytop5 header h1 {
     font-size: 30px;
   }
@@ -419,6 +419,13 @@ nav {
   }
   #bodyindex {
     background-color: azure;
+  }
+  #bodyindex h1 {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  #bodyindex p {
+    font-size: 20px;
   }
   .grid-item {
     width: 90%;
@@ -456,6 +463,10 @@ nav {
   }
 }
 @media screen and (max-width: 1107px) {
+  #bodyindex h1 {
+    margin-top: 100px;
+    font-size: 50px;
+  }
   .grid-container {
     grid-template-columns: repeat(2, 0.4fr);
   }

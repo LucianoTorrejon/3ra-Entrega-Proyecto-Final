@@ -61,7 +61,7 @@ nav{
 .nuevaClase{
     color: black;
 }
-@media screen and (max-width: 642px){
+@media screen and (max-width: 681px){
     #bodytop5{
         header{
             h1{
@@ -96,6 +96,13 @@ nav{
         display: flex;
    }
    #bodyindex{
+        h1{
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
         background-color: azure;
    }
    .grid-item{
@@ -143,6 +150,12 @@ nav{
     }
 }
 @media screen and (max-width: 1107px){
+    #bodyindex{
+        h1{
+            margin-top: 100px;
+            font-size: 50px;
+        }
+    }
     .grid-container{
         grid-template-columns: repeat(2, 0.4fr);
     }
