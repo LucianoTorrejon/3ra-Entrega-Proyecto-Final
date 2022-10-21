@@ -43,6 +43,11 @@ nav{
         font-size: nth($font-size, $n:5);
     }
     #bodyestadios{
+        header{
+            h1{
+                font-size: 40px;
+            }
+        }
         div{
             article{
                 h2{
